@@ -5,7 +5,7 @@ public class forEachLoop1 {
 
 	public static void main(String[] args) {
 		
-		
+		//github alistirmalar
 		List<Character> list1 = new ArrayList<>();
 		
 		list1.add('a');
