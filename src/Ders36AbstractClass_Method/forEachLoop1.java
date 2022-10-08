@@ -62,7 +62,7 @@ public class forEachLoop1 {
 	
 	for (String w:s) {
 		
-	if (!w.endsWith("y")) { //!w, startsWith
+	if (w.endsWith("y")) { //!w, startsWith
 		System.out.println(w);
 	}
 	if (w.startsWith("a")) {
