@@ -14,6 +14,12 @@ public class Guvercin extends Kus {
 		
 	}
 
+	@Override
+	protected void sesCikar() {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
 	}
 
