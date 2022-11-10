@@ -13,18 +13,19 @@ public class istisna06 {
 			System.out.println(str[4]);	//ArrayIndexOutOfBoundsException:
 			
 		}catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("arrayda olmayan bir deger atadınıs.");
+			System.out.println("arrayda olmayan bir deger atadiniz."+ e.getMessage());
 			
 		}
 		
-		//ClassCastException
+		//ClassCastException istisna 7
 		
 		try {
 			Object t=70;
 			String sayi= (String) t;//ClassCastException	
 		}catch (ClassCastException e) {
-			System.out.println("ClassCastException hatası aldınıs.");
+			System.out.println("ClassCastException hatası aldınız.");
 		}
+		
 		
 		String s="1234";
 		System.out.println(s+5);//birleştirme yapar toplama yapmas
@@ -32,21 +33,17 @@ public class istisna06 {
 		int s2= Integer.parseInt(s);
 		System.out.println(s2+5);
 		
-		try {
-			String s3="1a2b3c";
+   
+		// istisna 8 NumberFormatException: For input string: "1a2b3c!"
+		String s3="1a2b3c!";
 			
+		try {
 			int deger=Integer.parseInt(s3);
-			System.out.println(s3);
+		}catch (NumberFormatException e) {
+			System.out.println("String icersinde rakam disinda kaarakter kullanilmistir");
 			
 		}
-
-Exception in thread "main" java.lang.NumberFormatException: For input string: "1a2b3c"
-		String s3="1a2b3c";
-		
-		int deger=Integer.parseInt(s3);
-		System.out.println(s3);
-
-		
+	
+	}
 	}
 
-}

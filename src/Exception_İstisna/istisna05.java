@@ -12,16 +12,20 @@ public class istisna05 {
 		String str2= null;
 		
 		try {
+			
+			
 			System.out.println(str2.length());
 			
+			
+			
 		}catch(NullPointerException e) {
-		System.out.println(" Length( null stringler icin kullanılams"+ e.getMessage())	;
+		System.out.println("Length() null stringler icin kullanilamaz "+ e.getMessage())	;
 		
 		}finally {
 			System.out.println("finally calisir");
 		}
 	
-
+		System.out.println("sonuc");
 	}
 
 }

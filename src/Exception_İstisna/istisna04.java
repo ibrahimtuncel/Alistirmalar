@@ -15,7 +15,6 @@ public class istisna04 {
 			String satir= dosya.readLine();
 			
 			
-			
 			while(satir !=null){
 				System.out.println(satir);
 				satir= dosya.readLine();
@@ -23,7 +22,7 @@ public class istisna04 {
 			
 		} catch (FileNotFoundException e) {
 			
-			System.out.println("bu dosya bulunamıyor");
+			System.out.println("bu dosya bulunamiyor");
 			
 			e.printStackTrace();
 			
